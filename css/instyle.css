@@ -1,0 +1,166 @@
+@charset="utf-8"
+
+/* ========== 共通 ========= */
+html, body {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+body, div, p, h1, h2, h3, h4, ul {
+  margin: 0;
+  padding: 0;
+}
+p, li {
+  line-height: 1.8;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* ========== ヘッダー ========= */
+header {
+  background: #222e3d;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  padding: 20px 0;
+  width: 200px;
+  height: 46px;
+  margin-left: 20%;
+}
+.menu-btn {
+  padding: 10px 0;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  background: url(../img/hamburger.png) no-repeat center center;
+  background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    padding: 20px 0;
+    width: 340px;
+    height: 104px;
+    margin-left: 30%;
+  }
+  .menu-btn {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header-logo {
+    padding: 20px 0;
+    width: 340px;
+    height: 104px;
+    margin-left: 40%;
+  }
+  .menu-btn {
+    display: none;
+  }
+}
+
+/* ========== ナビ ========= */
+nav {
+  background: #222e3d;
+}
+.navber {
+  display: none;
+  list-style-type: none;
+}
+.navber a {
+  display: block;
+  padding: 0.6rem 0;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.navber a:hover {
+  background: #222e3d;
+}
+
+@media screen and (min-width: 768px) {
+  .navber {
+    display: flex !important;
+  }
+  .navber li {
+    flex: 1 1 auto;
+    text align: center;
+  }
+}
+.current{
+padding-top:2px;
+}
+
+.current2{
+padding-top:21px;
+}
+/* ========== メイン ========== */
+.home-course {
+  display: flex;
+  flex-flow: column;
+}
+.home-course li {
+  flex: 1 1 auto;
+  margin: 0 2px 4px 2px;
+  border: solid 5px #fff;
+  list-style-type: none;
+  background: #fff;
+}
+
+
+/* 画面幅が広い（タブレット・パソコン向け） */
+@media screen and (min-width: 768px) {
+    .home-course {
+    flex-flow: row;
+    }
+}
+
+.home-course a {
+  color: #fffff;
+  text-decoration: none;
+}
+
+.home-course figure:hover {
+  opacity: 0.5;
+}
+
+.home-course figcaption {
+  padding: 15px 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+/* ========== フッター ========= */
+footer {
+  background: #222e3d;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.footer-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-nav {
+  list-style-type: none;
+}
+.footer-nav li {
+  display: inline;
+  padding: 0 1rem 0 0;
+}
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-nav a:hover {
+  opacity: 0.5;
+}
+

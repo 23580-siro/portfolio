@@ -1,0 +1,26 @@
+/*=======================================
+トップページ
+=======================================*/
+
+/* メインビジュアル */
+#topMainVisual {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+/* スライダーのボタン */
+.slick-dots {
+  bottom: 15px;
+}
+.slick-dots li {
+  padding: 0 5px;
+}
+.slick-dots li button:before {
+  font-size: 14px;
+  color: #e88b07;
+  opacity: 1;
+}
+.slick-dots li.slick-active button:before {
+  color: #f00;
+  opacity: 1;
+}
